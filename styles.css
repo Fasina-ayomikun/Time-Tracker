@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+
+:root{
+    --Blue: hsl(246, 80%, 60%);
+    --Light-red /*(work)*/: hsl(15, 100%, 70%);
+    --Soft-blue /*(play)*/: hsl(195, 74%, 62%);
+    --Light-red-study /*(study)*/: hsl(348, 100%, 68%);
+    --Lime-green /*(exercise)*/: hsl(145, 58%, 55%);
+    --Violet /*(social)*/: hsl(264, 64%, 52%);
+    --Soft-orange /*(self care)*/: hsl(43, 84%, 65%);
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    width: 100%; 
+
+    margin-top: 10px; 
+    margin-bottom: 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik',sans-serif;
+    overflow-x: hidden;
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.page{
+  
+    height: 100vh;
+    display: grid;
+    
+    background-color: var(--Very-dark-blue);
+    padding: 0 100px;
+
+}
+.page-container {
+    background-color: transparent;
+    display: grid;
+    width: 100%;
+    height: 60%;
+    grid-template-columns: 25% 75%;
+    column-gap: 40px;
+    margin-top: 80px;
+
+    
+    
+}
+
+.person{
+    background-color: var(--Dark-blue);
+    border-radius: 20px;
+}
+.person-img{
+    height: 70px;
+    border: 3px solid var(--Pale-Blue);
+    border-radius: 50%;
+}
+.person-profile p {
+    color: var(--Pale-Blue);
+}
+.person-profile h1 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+
+margin-top: 10px;}
+.person-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 70%;
+    background-color:var(--Blue);
+    border-radius: 20px;
+  
+    padding: 10px 40px;
+}
+.link {
+   
+    margin: 10px 0;
+    font-size: 18px;
+    text-transform: capitalize;
+
+}
+.link a {
+    color: var(--Desaturated-blue);
+}
+.link a:hover {
+    color: #fff;
+}
+.link a:active {
+    color: #fff;
+}
+
+.person-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:20px;
+  
+   
+}
+.info-container {
+    
+    border-radius: 20px;
+    border:  5px solid #ffff;
+    padding: px;
+    
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    width: 100%;
+    border: 0;
+}
+.info {
+    border: 5px solid #fff;
+    margin-bottom: 0;
+    border-radius: 20px;
+    background-color: var(--Dark-blue);
+    margin-top: 50px;
+    padding: 20px;
+   border: 0;
+   
+}
+.info:hover {
+    background-color: var(--Desaturated-blue);
+    opacity: 0.6;
+    transition: 0.5s ease-in-out;
+}
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.week {
+    color: var(--Pale-Blue);
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.hours {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.play,.study,.self,.exercise,.social,.work{
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    opacity: 0.7;
+    z-index:-1 ;
+} 
+.workcontainer{
+    background-color:var(--Light-red);
+}
+.playcontainer{
+    background-color:var(--Soft-blue);
+}
+.studycontainer{
+    background-color:var(--Light-red-study);
+}
+.exercisecontainer{
+    background-color:var(--Lime-green);
+}
+.socialcontainer{
+    background-color:var(--Violet);
+}
+.selfcarecontainer{
+    background-color:var(--Soft-orange);
+    
+}
+ .active a{
+    color: #fff;
+}
+@media(max-width:967px){
+    .person-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap:20px;
+      
+       
+    }
+    .person{
+        margin-bottom: 40px;
+    }
+    .page-container {
+        display: flex;
+        flex-direction: column; 
+    }
+    .page{
+  
+        height: 100%;
+        display: grid;
+        
+        background-color: var(--Very-dark-blue);
+        padding: 0 100px;
+    
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .person-profile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .names {
+        margin-left: 50px;
+    }
+    
+     
+}
+@media(max-width:578px){
+    .person-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap:20px;
+      
+       
+    }
+}
