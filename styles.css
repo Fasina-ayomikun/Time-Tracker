@@ -45,7 +45,7 @@ a{
 }
 
 .page{
-    width:100vw;
+  
     height: 100vh;
     display: grid;
     
@@ -245,6 +245,8 @@ margin-top: 10px;}
      
 }
 @media(max-width:578px){
+    .page{
+        padiing:0;
     .person-info {
         display: grid;
         grid-template-columns: 1fr;
