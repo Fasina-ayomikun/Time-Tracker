@@ -245,38 +245,26 @@ margin-top: 10px;}
      
 }
 @media(max-width:578px){
-    .page{
-        padiing:0;
-    }
+    
     .person-info {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        gap:20px;
+        
       
        
     }
-}
-@media(max-width:375px){
-    .page-container{
-        width: 250px;
-    }
     .person{
-        width:100%;
-        padding: 0;
+        width: 100%;
     }
-    .person-profile {
-        
-        background-color:var(--Blue);
-        border-radius: 20px;
-        
-        padding: 0px 40px;
-
+}
+@media(max-width:376px){
+    .page-container{
+        width: 300px;
     }
-    .names{
-        margin: 0;
-    }
-    .names h1{
-        font-size: 1.65rem;
+    .page{
+        padding: 0 40px;
+        width: 100vh;
+        overflow: hidden;
     }
 }
