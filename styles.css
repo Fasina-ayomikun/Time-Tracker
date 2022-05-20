@@ -46,7 +46,8 @@ a{
 
 .page{
   
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     display: grid;
     
     background-color: var(--Very-dark-blue);
@@ -244,7 +245,7 @@ margin-top: 10px;}
     
      
 }
-@media(max-width:578px){
+@media(max-width:605px){
     
     .person-info {
         display: grid;
@@ -257,14 +258,39 @@ margin-top: 10px;}
     .person{
         width: 100%;
     }
+    .page{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 auto;
+    }
+    .page-container{
+        width: 100%;
+    }
+    .person-profile{
+        flex-direction: column;
+    }
 }
-@media(max-width:376px){
+@media(max-width:429px){
     .page-container{
         width: 300px;
+        margin: 70px auto;
     }
     .page{
         padding: 0 40px;
         width: 100vw;
         overflow: hidden;
+    }
+}
+@media(max-width:285px){
+    .person-profile{
+        align-items: flex-start;
+    }
+    .names{
+        margin: 0;
+    }
+    .links{
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
